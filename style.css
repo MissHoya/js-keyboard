@@ -1,0 +1,60 @@
+*{margin: 0;padding:0;}
+.keyBoard{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 214px;
+	width: 100%;
+	background-color: #EEEEEE;
+	text-align: center;
+}
+.letter-line{
+	width: 100%;
+	padding: 2px 0;
+}
+.letter,.letter-del,.letter-space,.letter-ok{
+	display: inline-block;
+	height: 40px;
+	margin: 0 2px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.letter-line .letter:active,.letter-space:active,.letter-ok:active{
+	position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #e5e5e5;
+    cursor: pointer;
+}
+#letter-line-2{
+	position: relative;
+}
+.letter-line .letter-del{
+	position: absolute;
+	top: 2px;
+	right: 1px;
+	padding: 0 3px;
+	background-color: #cccccc;
+}
+.letter-line .letter-del:active{
+	top: 3px;
+	right: 0;
+	border-color: #e5e5e5;
+    cursor: pointer;
+}
+.letter-space{
+	width: 75%;
+	vertical-align: top;
+}
+.letter-ok{
+	padding: 0 3px;
+	/*vertical-align: top;*/
+}
+.letter-bar{
+	height: 26px;
+	line-height: 26px;
+}
